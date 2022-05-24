@@ -10,6 +10,7 @@ function pošliposly () {
         basic.showNumber(6)
     }
     basic.showNumber(7)
+    ESP8266_IoT.connectThingSpeak()
     ESP8266_IoT.setData(
     "3EDHAXEIWOUZXRZ1",
     avg_prasnost,
@@ -18,10 +19,8 @@ function pošliposly () {
     Environment.octopus_BME280(Environment.BME280_state.BME280_pressure),
     Environment.ReadLightIntensity(AnalogPin.P2)
     )
-    basic.showNumber(8)
-    ESP8266_IoT.connectWifi("Host", "wifihost")
-    ESP8266_IoT.connectThingSpeak()
     ESP8266_IoT.uploadData()
+    basic.showNumber(8)
     basic.showNumber(9)
     odeslano += 1
     basic.clearScreen()
@@ -55,7 +54,7 @@ let avg_prasnost = 0
 let pocet_minut = 0
 let max_prasnost20m = 0
 let prasnost = 0
-basic.showNumber(1)
+basic.showNumber(8)
 prasnost = 0
 max_prasnost20m = 0
 pocet_minut = 0.0166667
