@@ -54,13 +54,13 @@ let avg_prasnost = 0
 let pocet_minut = 0
 let max_prasnost20m = 0
 let prasnost = 0
-basic.showNumber(8)
+basic.showNumber(1)
 prasnost = 0
 max_prasnost20m = 0
 pocet_minut = 0.0166667
 OLED.init(128, 64)
 ESP8266_IoT.initWIFI(SerialPin.P8, SerialPin.P12, BaudRate.BaudRate115200)
-basic.showNumber(2)
+basic.showNumber(7777777)
 basic.forever(function () {
     prasnost = Environment.ReadDust(DigitalPin.P16, AnalogPin.P1)
     i += 1
