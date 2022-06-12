@@ -54,6 +54,7 @@ let avg_prasnost = 0
 let pocet_minut = 0
 let max_prasnost20m = 0
 let prasnost = 0
+basic.showNumber(0)
 basic.showNumber(1)
 prasnost = 0
 max_prasnost20m = 0
